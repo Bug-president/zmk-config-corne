@@ -8,6 +8,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+
+&mt {
+    tapping-term-ms = <300>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -20,9 +25,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&lt 2 DELETE  &kp Q  &kp W        &kp E       &kp R       &lt 2 T    &lt 2 Y        &kp U       &kp I       &kp O        &kp P     &lt 2 MINUS
-&lt 1 ESCAPE  &kp A  &mt LCTRL S  &mt LALT D  &mt LGUI F  &lt 1 G    &lt 1 H        &mt LGUI J  &mt RALT K  &mt RCTRL L  &kp SEMI  &lt 1 SQT
-&kp LSHFT     &kp Z  &kp X        &kp C       &kp V       &kp B      &kp N          &kp M       &kp COMMA   &kp DOT      &kp FSLH  &kp RSHIFT
+&lt 2 DELETE  &kp Q  &kp W        &kp E       &lt 2 R     &kp T      &kp y          &mt 2 U     &kp I       &kp O        &kp P     &lt 2 MINUS
+&lt 1 ESCAPE  &kp A  &mt LCTRL S  &mt LALT D  &mt LGUI F  &kp G      &kp H          &mt LGUI J  &mt RALT K  &mt RCTRL L  &kp SEMI  &lt 1 SQT
+&kp LSHFT     &kp Z  &kp X        &kp C       &lt 1 V       &kp B    &kp N          &lt 1 M     &kp COMMA   &kp DOT      &kp FSLH  &kp RSHIFT
                                   &mo 3       &kp RET     &kp TAB    &kp BACKSPACE  &kp SPACE   &mo 3
             >;
         };
