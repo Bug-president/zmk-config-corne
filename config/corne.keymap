@@ -63,7 +63,7 @@
 
         SYMBOLS {
             bindings = <
-&kp TAB &kp EXCL      &kp AT_SIGN  &kp HASH       &kp DOLLAR    &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp LS(RG(NUMBER_4)) &kp EXCL      &kp AT_SIGN  &kp HASH       &kp DOLLAR    &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp PERCENT   &kp CARET    &kp AMPERSAND  &kp ASTERISK  &trans    &trans  &trans            &trans             &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
 &trans  &kp KP_EQUAL  &kp PIPE     &kp PLUS       &kp KP_MINUS  &trans    &trans  &trans            &trans             &kp LESS_THAN         &kp GREATER_THAN       &trans
                                    &trans         &trans        &trans    &trans  &trans            &trans
