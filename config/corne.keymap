@@ -11,6 +11,7 @@
     behaviors {
         td0: tap_dance_0 {
         compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
         tapping-term-ms = <100>;
         bindings = <&kp MINUS>, <&tog 4>, <&tog 0>;
 &mt {
