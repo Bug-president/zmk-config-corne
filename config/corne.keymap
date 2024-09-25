@@ -77,7 +77,7 @@ keymap {
             bindings = <
 &kp ESC   &kp Q          &key_repeat W &kp E         &kp R     &kp T  &kp Y &kp U &kp I &kp O     &kp SQT    &td0
 &kp LALT  &key_repeat A  &key_repeat S &key_repeat D &kp F     &kp G  &kp H &kp J &kp K &kp L     &kp        &trans
-&LSHIFT    &kp Z          &kp X         &kp C         &kp V     &kp B  &kp N &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH
+&kp LSHIFT    &kp Z          &kp X         &kp C         &kp V     &kp B  &kp N &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH
                                        &kp LCTRL     &kp SPACE &kp TAB &kp BSPC &kp SPC &kp LALT
     };
 };
