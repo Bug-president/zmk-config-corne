@@ -79,5 +79,7 @@ keymap {
 &kp LALT  &key_repeat A  &key_repeat S &key_repeat D &kp F     &kp G  &kp H &kp J &kp K &kp L     &kp        &trans
 &kp LSHIFT    &kp Z          &kp X         &kp C         &kp V     &kp B  &kp N &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH
                                        &kp LCTRL     &kp SPACE &kp TAB &kp BSPC &kp SPC &kp LALT
+            >;
+        };
     };
 };
