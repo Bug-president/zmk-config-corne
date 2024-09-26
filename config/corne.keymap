@@ -48,9 +48,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &kp F1          &kp F2        &kp F3        &kp F4        &kp F5          &trans  &kp F7    &kp UP_ARROW  &kp F8     &kp F9         &kp BSPC
-&trans     &trans      &trans  &trans  &trans &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_UP      &trans
-&trans  &trans   &trans        &trans        &trans        &trans          &trans  &trans    &trans  &trans    &kp PAGE_DOWN  &trans
+&trans     &kp F1      &kp F2    &kp F3        &kp F4        &kp F5          &trans  &kp F7    &kp UP_ARROW  &kp F8     &kp F9         &kp BSPC
+&trans     &trans      &trans    &trans        &trans        &trans          &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_UP      &trans
+&trans     &trans      &trans    &trans        &trans        &trans          &trans  &trans    &trans        &trans    &kp PAGE_DOWN  &trans
                                          &trans        &trans        &trans          &trans  &trans    &trans
             >;
         };
@@ -81,17 +81,17 @@
 
         LH_ARROWS {    
             bindings = <
-&kp ESC       &kp Q          &kp W &kp E         &kp R     &kp T  &kp Y &kp U &kp I     &kp O      &kp P     &td0
-&kp LALT      &kp A  &kp S &kp D &kp F     &kp G  &kp H &kp J &kp K     &kp L      &kp SEMI  &trans
-&kp LSHIFT    &kp Z          &kp X         &kp C         &kp V     &kp B  &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
+&kp ESC       &kp Q          &kp W         &kp E     &kp R     &kp T      &kp Y     &kp U     &kp I     &kp O      &kp P     &td0
+&kp LALT      &kp A          &kp S &kp D   &kp F     &kp G     &kp H      &kp J     &kp K     &kp L     &kp SEMI   &kp SEMI  &trans
+&kp LSHIFT    &kp Z          &kp X         &kp C     &kp V     &kp B      &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp RSHIFT
                                        &kp LCTRL     &kp SPACE &kp TAB &kp BSPC &kp SPC &kp LALT
             >;
         };
     CONTROLS {
             bindings = <
-&td1     &kp F1          &kp F2        &kp F3        &kp F4        &bt BT_CLR_ALL          &trans  &kp F7    &kp UP_ARROW  &kp F8     &kp F9       &rgb_ug RGB_TOG
-&bt BT_PRV     &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_COLOR_HSB (27,32,100) &rgb_ug RGB_COLOR_HSB (256,4,100)  &kp DOWN      &kp RIGHT  &kp PG_UP      &rgb_ug RGB_BRI
-&bt BT_NXT  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans          &trans  &trans    &trans        &trans     &kp PAGE_DOWN       &trans
+&td1           &kp F1          &kp F2        &kp F3        &kp F4        &bt BT_CLR_ALL  &rgb_ug RGB_COLOR_HSB (256,4,100) &kp F7   &kp UP_ARROW  &kp F8        &kp F9         &rgb_ug RGB_TOG
+&bt BT_PRV     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_COLOR_HSB (27,32,100) &kp LEFT &kp DOWN      &kp RIGHT     &kp PG_UP      &rgb_ug RGB_BRI
+&bt BT_NXT     &bt BT_CLR_ALL  &trans        &trans        &trans        &trans          &trans                            &trans   &trans        &trans        &kp PAGE_DOWN  &trans
                                          &trans        &trans        &trans          &trans  &trans    &trans
             >;
         };
