@@ -7,13 +7,19 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 / {
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <200>;
             bindings = <&kp MINUS>, <&tog 4>;
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>
+            bindings = <&kp DEL>, <&tog 5>;
         };
     };
     keymap {
@@ -27,7 +33,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&lt 2 DELETE  &kp Q  &kp W        &kp E       &lt 2 R     &kp T      &kp Y          &lt 2 U     &kp I       &kp O        &kp P     &td0
+&td1  &kp Q  &kp W        &kp E       &lt 2 R     &kp T      &kp Y          &lt 2 U     &kp I       &kp O        &kp P     &td0
 &lt 1 ESCAPE  &kp A  &mt LCTRL S  &mt LALT D  &mt LGUI F  &kp G      &kp H          &mt LGUI J  &mt RALT K  &mt RCTRL L  &kp SEMI  &lt 1 SQT
 &kp LSHFT     &kp Z  &kp X        &kp C       &lt 1 V     &kp B      &kp N          &lt 1 M     &kp COMMA   &kp DOT &kp FSLH  &kp RSHIFT
                                   &mo 3       &kp RET     &kp TAB    &kp BACKSPACE  &kp SPACE   &mo 3
@@ -43,8 +49,8 @@
 
             bindings = <
 &trans     &kp F1          &kp F2        &kp F3        &kp F4        &kp F5          &trans  &kp F7    &kp UP_ARROW  &kp F8     &kp F9         &kp BSPC
-&trans     &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_UP      &trans
-&bt BT_NXT  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans          &trans  &trans    &trans        &trans     &kp PAGE_DOWN  &trans
+&trans     &trans      &trans  &trans  &trans &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_UP      &trans
+&trans  &trans trans  &trans        &trans        &trans        &trans          &trans  &trans    &trans      &kp PAGE_DOWN  &trans
                                          &trans        &trans        &trans          &trans  &trans    &trans
             >;
         };
@@ -57,8 +63,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans    &kp CARET        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans    &kp BSPC
-&trans     &trans  &trans  &trans  &kp LALT &trans    &kp MINUS        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp BSLH  &kp GRAVE
+&trans     &trans  &trans  &trans  &trans  &trans    &kp CARET        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans    &kp KP_EQUAL
+&trans     &trans  &trans  &trans  &kp LALT &trans    &kp MINUS        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp BSLH  &kp PLUS
 &kp LSHFT  &trans  &trans  &trans  &trans  &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PIPE  &kp TILDE
                            &trans  &trans  &trans    &trans           &kp LS(LALT)         &kp KP_NUMBER_0
             >;
@@ -79,6 +85,14 @@
 &kp LALT      &kp A  &kp S &kp D &kp F     &kp G  &kp H &kp J &kp K     &kp L      &kp SEMI  &trans
 &kp LSHIFT    &kp Z          &kp X         &kp C         &kp V     &kp B  &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
                                        &kp LCTRL     &kp SPACE &kp TAB &kp BSPC &kp SPC &kp LALT
+            >;
+        };
+    CONTROLS {
+            bindings = <
+&td1     &kp F1          &kp F2        &kp F3        &kp F4        &bt BT_CLR_ALL          &trans  &kp F7    &kp UP_ARROW  &kp F8     &kp F9       &rgb_ug RGB_TOG
+&bt BT_PRV     &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_COLOR_HSB (27,32,100) &rgb_ug RGB_COLOR_HSB (256,4,100)  &kp DOWN      &kp RIGHT  &kp PG_UP      &rgb_ug RGB_BRI
+&bt BT_NXT  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans          &trans  &trans    &trans        &trans     &kp PAGE_DOWN       &trans
+                                         &trans        &trans        &trans          &trans  &trans    &trans
             >;
         };
     };
