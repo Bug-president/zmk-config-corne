@@ -13,14 +13,17 @@
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp MINUS>, <&tog 4>;
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp DEL>, <&tog 5>;
+        };
+        mod-tap: &mt {
+            tapping-term-ms = <200>;
         };
     };
     keymap {
