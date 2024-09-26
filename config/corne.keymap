@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/rgb.h>
 / {
     &mt {
-        tapping-term-ms = <200>;
-        };
+    tapping-term-ms = <300>;
+    };
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -26,6 +26,7 @@
             bindings = <&kp DEL>, <&tog 5>;
         };
     };
+};
 / {
     keymap {
     compatible = "zmk,keymap";
