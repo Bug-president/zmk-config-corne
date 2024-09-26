@@ -22,7 +22,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp DEL>, <&tog 5>;
         };
-        mod-tap: &mt {
+        &mt {
             tapping-term-ms = <200>;
         };
     };
