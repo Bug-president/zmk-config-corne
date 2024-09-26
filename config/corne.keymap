@@ -22,10 +22,10 @@
             tapping-term-ms = <200>;
             bindings = <&kp DEL>, <&tog 5>;
         };
-        &mt {
-            tapping-term-ms = <200>;
-        };
     };
+    &mt {
+        tapping-term-ms = <200>;
+        };
     keymap {
     compatible = "zmk,keymap";
 
