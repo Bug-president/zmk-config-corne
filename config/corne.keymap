@@ -22,6 +22,13 @@
                 , <&macro_release &mo 6 &kp LALT>
                 ;
         };
+        kpt: kp_tap_time {
+            compatible = "zmk,behavior-macro-one-param";
+            label = "KPT";
+            tap-ms = <10>;  // tweak as needed
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+        };
     };
 };    
 /{
@@ -44,6 +51,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp RET>, <&opt_hld>;
         };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kpt>, <&kpt>;
+        };
     };
 };
 / {
@@ -59,7 +74,7 @@
 
             bindings = <
 &td1  &kp Q  &kp W        &kp E       &lt 2 R     &kp T      &kp Y          &lt 2 U     &kp I       &kp O        &kp P     &td0
-&lt 1 ESCAPE  &kp A  &mt LCTRL S  &mt LALT D  &mt LGUI F  &kp G      &kp H          &mt LGUI J  &mt RALT K  &mt RCTRL L  &kp SEMI  &lt 1 SQT
+&lt 1 ESCAPE  &kp A  &hm LCTRL S  &hm LALT D  &hm LGUI F  &kp G      &kp H          &hm LGUI J  &hm RALT K  &hm RCTRL L  &kp SEMI  &lt 1 SQT
 &kp LSHFT     &kp Z  &kp X        &kp C       &lt 1 V     &kp B      &kp N          &lt 1 M     &kp COMMA   &kp DOT &kp FSLH  &kp RSHIFT
                                   &mo 3       &td2      &kp TAB    &kp BACKSPACE  &kp SPACE   &mo 3
             >;
