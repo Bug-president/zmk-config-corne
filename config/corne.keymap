@@ -48,7 +48,7 @@
 &td1  &kp Q  &kp W        &kp E       &lt 2 R     &kp T      &kp Y          &lt 2 U     &kp I       &kp O        &kp P     &td0
 &lt 1 ESCAPE  &kp A  &mt LCTRL S  &mt LALT D  &mt LGUI F  &kp G      &kp H          &mt LGUI J  &mt RALT K  &mt RCTRL L  &kp SEMI  &lt 1 SQT
 &kp LSHFT     &kp Z  &kp X        &kp C       &lt 1 V     &kp B      &kp N          &lt 1 M     &kp COMMA   &kp DOT &kp FSLH  &kp RSHIFT
-                                  &mo 3       &kp RET     &kp TAB    &kp BACKSPACE  &kp SPACE   &mo 3
+                                  &mo 3       &td2      &kp TAB    &kp BACKSPACE  &kp SPACE   &mo 3
             >;
         };
 
@@ -107,12 +107,12 @@
                                          &trans        &trans        &trans          &trans  &trans    &trans
             >;
         };
-    WINDOWS {
+    WINDOW_MANAGEMENT {
             bindings = <
 &td1       &kp Q    &kp KP_NUMBER_7     &kp KP_NUMBER_8  &kp KP_NUMBER_9        &kp Y  &kp U &kp I     &kp O     &kp P        &trans
 &trans     &kp A    &kp KP_NUMBER_4     &kp KP_NUMBER_5  &kp KP_NUMBER_6        &kp H  &kp J &kp K     &kp L     &kp SEMI     &trans
 &trans     &kp Z    &kp KP_NUMBER_1     &kp KP_NUMBER_2  &kp KP_NUMBER_3        &kp N  &kp M &kp COMMA &kp DOT   &kp SLASH    &kp RSHFT                                         
-                            &td2        &kp LALT        &kp LSHFT(LALT)          &trans  &trans    &kp BACKSPACE
+                            &td2        &kp SPACE        &kp LSHFT(LALT)          &trans  &trans    &kp BACKSPACE
             >;
         };
     };
