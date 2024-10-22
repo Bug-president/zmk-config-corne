@@ -77,7 +77,7 @@
             tapping-term-ms = <300>;
             quick-tap-ms = <175>;               
             require-prior-idle-ms = <100>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
         hm_r: homerow_mods_right {
@@ -88,6 +88,8 @@
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
+            hold-trigger-key-poitions = <KEYS_R THUMBS>
+            hold-trigger-on-release;
         };
     };
 };
