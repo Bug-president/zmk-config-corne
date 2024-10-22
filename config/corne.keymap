@@ -54,8 +54,8 @@
         shft_dnc: shift_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp SHFT>, <&kp SPACE>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RET>, <&opt_hld>;
         };
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
