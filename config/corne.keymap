@@ -67,7 +67,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SHFT>, <&caps_word>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
         hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
