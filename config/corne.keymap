@@ -69,7 +69,7 @@
             bindings = <&kp>,  <&kp>;
             flavor = "balanced";
             tapping-term-ms = <300>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            quick-tap-ms = <175>;               
             require-prior-idle-ms = <100>;
             hold-trigger-key-positions = <KEYS_R, KEYS_T>;
             hold-trigger-on-release;
