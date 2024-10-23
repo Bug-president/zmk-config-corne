@@ -34,13 +34,13 @@
                 , <&macro_release &mo 6 &kp LALT>
                 ;
         };
-        kpt: kp_tap_time {
-            compatible = "zmk,behavior-macro-one-param";
-            label = "KPT";
-            tap-ms = <10>;  // tweak as needed
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
-        };
+        //kpt: kp_tap_time {
+            //compatible = "zmk,behavior-macro-one-param";
+            //label = "KPT";
+            //tap-ms = <10>;  // tweak as needed
+            //#binding-cells = <1>;
+            //bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+        //};
     };
 };    
 /{
@@ -72,7 +72,7 @@
         hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&kpt>,  <&kpt>;
+            bindings = <&kp>,  <&kp>;
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <175>;               
@@ -83,7 +83,7 @@
         hm_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&kpt>, <&kpt>;
+            bindings = <&kp>, <&kp>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;
