@@ -65,7 +65,7 @@
         tab_magic: tab_magic {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&kp TAB>, <&kp LS(LG(LCTRL))>;
         };
         hm_l: homerow_mods_left {
