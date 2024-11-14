@@ -162,7 +162,7 @@
             bindings = <
 &td1           &kp F1          &kp F2        &kp F3        &kp F4        &bt BT_CLR_ALL  &rgb_ug RGB_COLOR_HSB (256,4,100) &kp F7   &kp UP_ARROW  &kp F8        &bl BL_TOG         &rgb_ug RGB_TOG
 &bt BT_PRV     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_COLOR_HSB (27,32,100) &kp LEFT &kp DOWN      &kp RIGHT     &bl BL_CYCLE      &rgb_ug RGB_BRI
-&bt BT_NXT     &bt BT_CLR_ALL  &trans        &trans        &trans        &trans          &trans                            &trans   &trans        &trans        &kp PAGE_DOWN  &trans
+&bt BT_NXT     &bt BT_CLR_ALL  &trans        &trans        &trans        &trans          &out OUT_USB                      &out OUT_BLE   &trans        &trans        &kp PAGE_DOWN  &trans
                                          &trans        &trans        &trans          &trans  &trans    &trans
             >;
         };
