@@ -24,7 +24,7 @@
 #define HM_PRIOR_IDLE 25
 
 &mt {tapping-term-ms = <300>;};
-{
+/{
     macros {
         opt_hld: opt_hld {
             compatible = "zmk,behavior-macro";
