@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SQT>, <&tog 2>;
+            bindings = <&kp SQT>, <&tog 1>;
         };
         shft_dnc: shift_dance {
             compatible = "zmk,behavior-tap-dance";
@@ -127,7 +127,7 @@
 
             bindings = <
 &trans     &kp F1      &kp F2    &kp F3        &kp F4        &kp F5          &trans  &kp F7    &kp UP_ARROW  &kp F8     &kp F9         &kp BSPC
-&trans     &trans      &trans    &trans        &trans        &trans          &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_UP      &trans
+&trans     &trans      &trans    &trans        &trans        &trans          &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_UP      &td3
 &trans     &trans      &trans    &trans        &trans        &trans          &trans  &trans    &trans        &trans    &kp PAGE_DOWN  &trans
                                          &trans        &trans        &trans          &trans  &kp LALT    &trans
             >;
@@ -142,7 +142,7 @@
 
             bindings = <
 &trans     &trans  &trans  &trans  &trans  &trans    &kp CARET        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans    &kp KP_EQUAL
-&trans     &trans  &trans  &trans  &kp LALT &trans    &kp MINUS        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp BSLH  &kp PLUS
+&trans     &trans  &trans  &trans  &kp LALT &trans    &kp MINUS        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp BSLH  &td3
 &kp LSHFT  &trans  &trans  &trans  &trans  &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PIPE  &kp TILDE
                            &trans  &trans  &trans    &trans           &kp LS(LALT)         &kp KP_NUMBER_0
             >;
