@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SQT>, <&tog 6>;
+            bindings = <&kp SQT>, <&tog 2>;
         };
         shft_dnc: shift_dance {
             compatible = "zmk,behavior-tap-dance";
