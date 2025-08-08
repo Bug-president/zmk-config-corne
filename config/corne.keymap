@@ -176,7 +176,7 @@
     BOTH_ARROWS {
             bindings = <
 &kp ESC       &kp Q          &kp UP_ARROW         &kp E     &kp R     &kp T      &kp Y     &kp U     &kp UP_ARROW     &kp O      &kp P     &td0
-&kp LALT      &kp RIGHT_ARROW          &kp DOWN_ARROW         &kp LEFT_ARROW     &kp F     &kp LEFT_ARROW     &kp DOWN_ARROW      &kp RIGHT_ARROW     &kp K     &kp L     &kp SEMI   &trans
+&kp LALT      &kp LEFT_ARROW          &kp DOWN_ARROW         &kp LEFT_ARROW     &kp F     &kp LEFT_ARROW     &kp DOWN_ARROW      &kp RIGHT_ARROW     &kp K     &kp L     &kp SEMI   &td3
 &kp LSHIFT    &kp Z          &kp X         &kp C     &kp V     &kp B      &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH &kp RSHIFT
                                        &kp SPACE     &kp SPACE &kp TAB &kp BSPC &kp SPC &kp LALT
             >;
